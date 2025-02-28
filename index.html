@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog sobre Microprocesadores</title>
+    <title> Microprocesadores</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
         }
         main {
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 80px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #333;
@@ -27,6 +75,10 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -34,30 +86,59 @@
     <header>
         <h1>Blog sobre Microprocesadores</h1>
     </header>
+    <nav>
+        <a href="#introduccion">Introducción</a>
+        <a href="#historia">Historia</a>
+        <a href="#arquitectura">Arquitectura</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#aplicaciones">Aplicaciones</a>
+    </nav>
     <main>
-        <section>
+        <section id="introduccion">
             <h2>Introducción a los Microprocesadores</h2>
-            <p>Los microprocesadores son el corazón de los dispositivos electrónicos modernos, actuando como la unidad central de procesamiento (CPU) que ejecuta instrucciones y procesa datos.</p>
+            <p>Los microprocesadores son el corazón de los dispositivos electrónicos modernos, actuando como la unidad central de procesamiento (CPU) que ejecuta instrucciones y procesa datos. Son esenciales en computadoras, teléfonos inteligentes, electrodomésticos y muchos otros dispositivos.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x400" alt="Microprocesador">
+            </div>
         </section>
-        <section>
+        <section id="historia">
             <h2>Historia de los Microprocesadores</h2>
-            <p>El primer microprocesador fue el Intel 4004, lanzado en 1971, que marcó el comienzo de la era de la computación personal.</p>
+            <p>El primer microprocesador fue el Intel 4004, lanzado en 1971, que marcó el comienzo de la era de la computación personal. Este microprocesador de 4 bits fue diseñado para calculadoras, pero su impacto fue mucho más allá, sentando las bases para la revolución tecnológica que siguió.</p>
+            <p>En los años siguientes, compañías como Intel, AMD y ARM desarrollaron microprocesadores más avanzados, aumentando su capacidad de procesamiento y reduciendo su tamaño. Hoy en día, los microprocesadores son omnipresentes en nuestra vida diaria.</p>
         </section>
-        <section>
+        <section id="arquitectura">
             <h2>Arquitectura de los Microprocesadores</h2>
-            <p>La arquitectura de un microprocesador se refiere a su diseño y organización, incluyendo la forma en que se manejan los datos y las instrucciones.</p>
+            <p>La arquitectura de un microprocesador se refiere a su diseño y organización, incluyendo la forma en que se manejan los datos y las instrucciones. Las arquitecturas más comunes son:</p>
+            <ul>
+                <li><strong>Arquitectura Von Neumann:</strong> Utiliza una única memoria para almacenar datos e instrucciones.</li>
+                <li><strong>Arquitectura Harvard:</strong> Separa la memoria de datos de la memoria de instrucciones, permitiendo un acceso más rápido.</li>
+                <li><strong>Arquitectura RISC:</strong> (Reduced Instruction Set Computer) Utiliza un conjunto reducido de instrucciones para aumentar la eficiencia.</li>
+                <li><strong>Arquitectura CISC:</strong> (Complex Instruction Set Computer) Utiliza un conjunto complejo de instrucciones para realizar tareas más elaboradas.</li>
+            </ul>
         </section>
-        <section>
+        <section id="tipos">
             <h2>Tipos de Microprocesadores</h2>
-            <p>Existen varios tipos de microprocesadores, incluyendo microprocesadores de 8 bits, 16 bits, 32 bits y 64 bits, cada uno con diferentes capacidades y aplicaciones.</p>
+            <p>Existen varios tipos de microprocesadores, cada uno con diferentes capacidades y aplicaciones:</p>
+            <ul>
+                <li><strong>Microprocesadores de 8 bits:</strong> Utilizados en dispositivos simples como electrodomésticos y juguetes.</li>
+                <li><strong>Microprocesadores de 16 bits:</strong> Utilizados en sistemas embebidos y dispositivos más complejos.</li>
+                <li><strong>Microprocesadores de 32 bits:</strong> Comunes en computadoras personales y teléfonos inteligentes antiguos.</li>
+                <li><strong>Microprocesadores de 64 bits:</strong> Utilizados en computadoras modernas, servidores y dispositivos móviles de alta gama.</li>
+            </ul>
         </section>
-        <section>
+        <section id="aplicaciones">
             <h2>Aplicaciones de los Microprocesadores</h2>
-            <p>Los microprocesadores se utilizan en una amplia variedad de dispositivos, desde computadoras y teléfonos inteligentes hasta electrodomésticos y sistemas embebidos.</p>
+            <p>Los microprocesadores se utilizan en una amplia variedad de dispositivos y sistemas, incluyendo:</p>
+            <ul>
+                <li><strong>Computadoras personales:</strong> Desde laptops hasta servidores, los microprocesadores son el núcleo de estos dispositivos.</li>
+                <li><strong>Teléfonos inteligentes:</strong> Los microprocesadores modernos permiten realizar tareas complejas en dispositivos móviles.</li>
+                <li><strong>Electrodomésticos:</strong> Lavadoras, refrigeradores y otros electrodomésticos utilizan microprocesadores para mejorar su funcionalidad.</li>
+                <li><strong>Sistemas embebidos:</strong> Utilizados en automóviles, aviones y sistemas industriales para controlar procesos específicos.</li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Blog sobre Microprocesadores</p>
+        <p>&copy; 2023 Blog sobre Microprocesadores. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
