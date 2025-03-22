@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Microprocesadores</title>
+    <title>Blog sobre Microprocesadores</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -80,6 +80,20 @@
         footer p {
             margin: 0;
         }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .back-to-top:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +106,7 @@
         <a href="#arquitectura">Arquitectura</a>
         <a href="#tipos">Tipos</a>
         <a href="#aplicaciones">Aplicaciones</a>
+        <a href="#turbo-debugger">Turbo Debugger</a>
     </nav>
     <main>
         <section id="introduccion">
@@ -136,9 +151,36 @@
                 <li><strong>Sistemas embebidos:</strong> Utilizados en automóviles, aviones y sistemas industriales para controlar procesos específicos.</li>
             </ul>
         </section>
+        <section id="turbo-debugger">
+            <h2>Turbo Debugger y Programación en Ensamblador</h2>
+            <p>Turbo Debugger es una herramienta de depuración utilizada para analizar y depurar programas escritos en lenguaje ensamblador. Es especialmente útil para desarrolladores que trabajan con programas `.asm` y necesitan inspeccionar el estado del procesador, la memoria y los registros durante la ejecución del programa.</p>
+            <h3>Archivos .bat</h3>
+            <p>Los archivos `.bat` son scripts de lotes que se utilizan en sistemas Windows para automatizar tareas. En el contexto de la programación en ensamblador, los archivos `.bat` pueden utilizarse para compilar y enlazar programas `.asm` utilizando herramientas como `TASM` (Turbo Assembler) y `TLINK` (Turbo Linker).</p>
+            <h3>Directivas TASM y TLINK</h3>
+            <p>Las directivas `TASM` y `TLINK` son comandos utilizados en la línea de comandos para ensamblar y enlazar programas en ensamblador. Por ejemplo:</p>
+            <pre>
+tasm programa.asm
+tlink programa.obj
+            </pre>
+            <p>Estos comandos ensamblan el archivo `programa.asm` en un archivo objeto `programa.obj` y luego lo enlazan para crear un archivo ejecutable.</p>
+            <h3>Programas .asm</h3>
+            <p>Los programas `.asm` son archivos de texto que contienen código fuente escrito en lenguaje ensamblador. Este código es específico de la arquitectura del procesador y se ensambla en código máquina que puede ser ejecutado directamente por el procesador.</p>
+            <h3>Teclas de Función de Turbo Debugger</h3>
+            <p>Turbo Debugger cuenta con varias teclas de función que facilitan la depuración de programas:</p>
+            <ul>
+                <li><strong>F2:</strong> Establece o elimina un punto de interrupción (breakpoint) en la línea actual.</li>
+                <li><strong>F3:</strong> Muestra la ventana de código ensamblador.</li>
+                <li><strong>F4:</strong> Ejecuta el programa hasta la línea actual.</li>
+                <li><strong>F5:</strong> Maximiza o restaura la ventana actual.</li>
+                <li><strong>F6:</strong> Cambia entre las ventanas abiertas en el depurador.</li>
+                <li><strong>F7:</strong> Ejecuta el programa paso a paso, entrando en las subrutinas.</li>
+                <li><strong>F8:</strong> Ejecuta el programa paso a paso, sin entrar en las subrutinas.</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Blog sobre Microprocesadores. Todos los derechos reservados.</p>
     </footer>
+    <a href="#top" class="back-to-top">Volver arriba</a>
 </body>
 </html>
